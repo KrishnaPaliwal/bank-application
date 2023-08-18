@@ -26,7 +26,7 @@ public class AccountController {
         return accountService.createAccount(account);
     }
 
-    @GetMapping(value = "/{id}",  produces = "application/xml")
+    @GetMapping(value = "/{id}")
     public Account getAccountById(@PathVariable Long id) {
         return accountService.getAccountById(id);
     }
